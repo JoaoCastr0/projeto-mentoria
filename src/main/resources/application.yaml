@@ -1,0 +1,15 @@
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    title: Bookstore API
+    description: API de gerenciamento de livros para a Livraria CDA
+    version: "1.0"
+    contact:
+      name: João Castro
+      url: http://www.google.com
+      email: email@email.com.br
+    license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
