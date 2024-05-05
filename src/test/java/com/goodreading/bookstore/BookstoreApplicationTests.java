@@ -1,10 +1,10 @@
-package com.boaleitura.livraria;
+package com.goodreading.bookstore;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LivrariaApplicationTests {
+class BookstoreApplicationTests {
 
 	@Test
 	void contextLoads() {

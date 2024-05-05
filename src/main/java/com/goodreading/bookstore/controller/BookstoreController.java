@@ -31,33 +31,33 @@ public class BookstoreController {
                     content = @Content(mediaType = "application/json",
                             schema = @Schema(implementation = Book.class)))
     })
-    public List<Book> getAllLivros() {
+    public List<Book> getAllBooks() {
         return bookstoreService.findAll();
     }
 
     // POST: Criar um novo livro
     @PostMapping
-    public Book createLivro(@RequestBody Book book) {
+    public Book createBook(@RequestBody Book book) {
         return bookstoreService.save(book);
     }
 
     // PUT: Atualizar um livro existente
     @PutMapping("/{id}")
-    public ResponseEntity<Book> updateLivro(@PathVariable Long id, @RequestBody Book bookDetails) {
+    public ResponseEntity<Book> updateBook(@PathVariable Long id, @RequestBody Book bookDetails) {
         Book updatedBook = bookstoreService.update(id, bookDetails);
         return ResponseEntity.ok(updatedBook);
     }
 
     // DELETE: Deletar um livro
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteLivro(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
         bookstoreService.delete(id);
         return ResponseEntity.ok().build();
     }
 
     // Método para atualização parcial de um livro
     @PatchMapping("/{id}")
-    public ResponseEntity<Book> updateLivroPartially(@PathVariable Long id, @RequestBody Book bookDetails) {
+    public ResponseEntity<Book> updateBookPartially(@PathVariable Long id, @RequestBody Book bookDetails) {
         Book updatedBook = bookstoreService.updatePartially(id, bookDetails);
         return ResponseEntity.ok(updatedBook);
     }
