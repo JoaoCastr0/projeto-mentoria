@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BookstoreApplication {
 
 	public static void main(String[] args) {
-		System.setProperty("server.servlet.context-path", "/cda");
+		System.setProperty("server.servlet.context-path", "/bookstore");
 		SpringApplication.run(BookstoreApplication.class, args);
 	}
 
