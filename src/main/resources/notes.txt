@@ -1,0 +1,17 @@
+##Anotações
+
+http://localhost:8080/bookstore/swagger-ui/index.html
+http://localhost:8080/bookstore/api-docs
+
+CREATE TABLE books (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    publication_date DATE NOT NULL,
+    price DECIMAL(10, 2) NOT NULL
+);
+
+INSERT INTO books (title, author, publication_date, price) VALUES
+('O Senhor dos Anéis', 'J.R.R. Tolkien', '1954-07-29', 39.90),
+('O Hobbit', 'J.R.R. Tolkien', '1937-09-21', 29.90),
+('Harry Potter e a Pedra Filosofal', 'J.K. Rowling', '1997-06-26', 34.90);
