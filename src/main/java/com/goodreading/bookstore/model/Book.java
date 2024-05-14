@@ -17,7 +17,8 @@ public class Book {
     @Column(nullable = false)
     private String author;
 
-    @Column(nullable = false)
+    @Column(name = "publication_date", nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date publicationDate;
 
     @Column(nullable = false)
